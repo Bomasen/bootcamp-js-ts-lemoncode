@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+  --bg-color: rgb(229, 234, 238);
+  --color-primary: #d07743;
+  --color-secondary: #65322a;
+  --font-family: Roboto, "Arial", "Helvetica", "sans-serfif";
+
+}
+
+
+body {
+  height: 100vh;
+  font-family: var(--font-family);
+  line-height: 1;
+  overflow: hidden;
+  background: url(../src/img/bg_content_lr.jpg);
+  background-size: cover;
+  overflow-y: scroll;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--color-primary);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--color-secondary);
+}
+
+
+#main {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#contenedor {
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+#header {
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: fit-content(100%);
+  align-items: center;
+  justify-content: center;
+  background: url(./img/museo_title.png);
+  background-size: cover;
+  background-position: 0 -60px;
+  border-radius: 10px;
+  box-shadow: 20px -5px 10px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0px;
+  gap: 10px;
+
+}
+
+#header button {
+  margin-bottom: 20px;
+}
+
+#header h1 {
+  color: #fff;
+  width: 100%;
+  -webkit-text-stroke: 2px #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  padding: 16px;
+  text-align: center;
+}
+
+#header input {
+  text-align: center;
+  height: 30px;
+  width: 300px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+#listado-personajes {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 50px;
+  justify-items: center;
+  padding-bottom: 50px;
+
+}
+
+.div-personaje {
+  width: 300px;
+  height: 500px;
+  background: linear-gradient(to top, #f6e0a2, #f9ecc9, #ffff);
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  align-content: center;
+  border-radius: 5px;
+  box-shadow: 20px -5px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+
+.div-personaje img {
+  border-radius: 5px;
+  align-self: center;
+  max-width: 200px;
+
+}
+
+.div-parrafos {
+  border-radius: 5px;
+  border: outset 2px;
+  padding: 5px;
+  margin: 5px;
+  width: 90%;
+  max-height: 160px;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+
+}
+
+.div-error {
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  position: absolute;
+  top: 200px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 300px;
+  padding: 2px 2px;
+  background-color: rgba(255, 0, 0, 0.719);
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  #header {
+    background-position: 0 -20px;
+
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .div-personaje {
+    width: 400px;
+    justify-self: center;
+    justify-content: space-around;
+  }
+
+  .div-personaje img {
+    object-fit: cover;
+    max-width: 250px;
+    max-height: 300px;
+
+  }
+
+  #header {
+    background-position: 0 -10px;
+    height: 120px;
+  }
+
+  #header h1 {
+    padding: 5px;
+    font-size: 35px;
+  }
+
+  #header input {
+    height: 30px;
+    width: 300px;
+    font-size: 16px;
+
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #header {
+    height: 100px;
+    background-position: 0 0px;
+  }
+
+  #header h1 {
+    -webkit-text-stroke: 1.5px #000;
+    padding: 5px;
+    font-size: 25px;
+  }
+
+  #header input {
+    height: 20px;
+    width: 300px;
+    font-size: 12px;
+
+  }
+
+  #header button {
+    text-align: center;
+    height: 30px;
+    line-height: 5px;
+  }
+
+}

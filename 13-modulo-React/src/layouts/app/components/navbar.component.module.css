@@ -1,0 +1,29 @@
+.navbar{
+    background-color: var(--secondary_color);
+    margin-bottom: 25px;
+}
+
+.list{
+display: flex;
+justify-content: center;
+align-items: center;
+color: #ffffff;
+padding: 10px;
+gap: 40px;
+}
+
+.list a {
+    color:#ffffff;
+    text-decoration: none;
+
+}
+
+.selected{
+    border-bottom: 5px solid var(--primary_color);
+    padding-bottom: 5px;
+    margin-bottom: -10px;
+}
+
+.selected-none{
+    display: none;
+}

@@ -1,0 +1,12 @@
+.footer{
+    display: flex;
+    background-color: var(--secondary_color);
+    align-items: center;
+    justify-content: center;
+    padding: 5em;
+    margin-top: 100px;
+}
+
+.footer-logo{
+    width: 200px;
+}

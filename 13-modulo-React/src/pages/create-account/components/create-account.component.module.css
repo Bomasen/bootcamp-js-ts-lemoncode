@@ -1,0 +1,48 @@
+.error {
+    color: var(--error_color);
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+.section-container {
+    display: flex;
+    align-content: flex-start;
+    flex-flow: wrap column;
+    border-bottom: 2px solid gray;
+    padding: 30px 50px;
+    margin-bottom: 10px;
+}
+
+.section-container div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.section-container p {
+    margin: 0 10px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.section-container label {
+    font-weight: 600;
+    margin-right: 20px;
+    min-width: 300px;
+    text-align: right;
+}
+
+.button {
+    margin: 10px 0 10px 360px;
+}
+
+.select-type {
+    min-width: 200px;
+}
+
+.input-alias {
+    min-width: 150px;
+    max-width: 180px;
+}

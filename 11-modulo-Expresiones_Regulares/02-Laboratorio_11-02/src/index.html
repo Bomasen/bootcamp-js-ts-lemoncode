@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extracción Imágenes desde HTML</title>
+  </head>
+  <body>
+    <div id="contenedor">
+      <header>
+        <h1>Extracción Imágenes desde HTML</h1>
+      </header>
+      <form action="" id="extract-form">
+        <label for="HTML-text">Pegue el HTML aquí:</label>
+        <textarea name="HTML-text" id="HTML-text"></textarea>
+        <button type="submit" id="extract-btn" name="HTML-text">Extraer Imágenes</button>
+      </form>
+      <div id="img-listado"></div>
+    </div>
+  </body>
+  <script src="./extraccion-imagenes.ts" type="module"></script>
+</html>

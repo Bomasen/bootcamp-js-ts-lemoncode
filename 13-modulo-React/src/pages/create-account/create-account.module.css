@@ -1,0 +1,18 @@
+.root {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid var(--secondary_color);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.header-container h1 {
+    font-size: 2.2rem;
+    font-weight: 300;
+}

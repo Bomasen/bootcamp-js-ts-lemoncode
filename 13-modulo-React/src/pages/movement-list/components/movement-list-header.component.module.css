@@ -1,0 +1,47 @@
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid var(--secondary_color);
+    padding-bottom: 15px;
+    margin-bottom:5px;
+}
+.header-top h1 {
+    align-self: flex-end;
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+.header-top span{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary_color);
+}
+
+
+.header-balance{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: -20px;
+}
+
+.header-balance h2{
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-bottom span {
+    font-size: 1.2rem;
+    font-weight: 600;
+}

@@ -1,0 +1,161 @@
+
+@media (max-width:900px) {
+    .icon_menu {
+        flex-grow: 1;
+        flex-basis: 5%;
+
+    }
+
+    .icon_menu img {
+        max-width: 20px;
+        margin-left: 15px;
+        transition: all 300ms;
+    }
+
+    .navbar {
+        flex-grow: 1;
+        flex-basis: 61%;
+    }
+
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .navbar ul li {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        font-family: var(--fontRegular);
+        font-size: calc(0.9*(var(--size)));
+        color: var(--general-color);
+        cursor: pointer;
+        transition: all 800ms;
+    }
+
+    .icon_user {
+        flex-grow: 1;
+        flex-basis: 19%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .icon_user img {
+        max-width: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        cursor: pointer;
+        transition: all 300ms;
+    }
+
+    .icon_user img:last-child {
+        margin-right: 5px;
+
+    }
+
+    .footbar {
+        gap: 50px;
+    }
+
+    .footbar div img {
+        max-width: 35px;
+        max-height: 35px;
+        padding: 10px;
+        margin-right: 10px;
+        border-radius: 35%;
+    }
+
+    .footbar div span {
+        width: 100%;
+        text-align: start;
+        font-size: calc(0.8*(var(--size)));
+        color: var(--background-color);
+        align-self: center;
+
+    }
+
+}
+
+@media (max-width:680px) {
+    .menu {
+        height: 80px;
+        padding: 0;
+        display: flex;
+        position: sticky;
+        top: 0;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .icon_menu {
+        height: 80px;
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        border-right: 2px solid var(--general-color);
+    }
+
+    .icon_user {
+        height: 80px;
+        flex-basis: 50%;
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+
+    }
+
+    .title {
+        font-size: var(--size);
+        text-align: center;
+    }
+
+    .footbar {
+        height: 350px;
+        display: grid;
+        grid-template-columns: 1, 1fr;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .footbar div {
+        padding-bottom: 10px;
+        margin: 1px auto;
+        border-bottom: 2px solid #46494e;
+        width: 300px;
+    }
+
+    .footbar div img {
+        max-width: 80px;
+        max-height: 80px;
+        padding: 10px;
+        margin-right: 20px;
+        border-radius: 35%;
+    }
+
+    .footbar div span {
+        width: 100%;
+        text-align: start;
+        font-size: var(--size);
+        color: var(--background-color);
+        align-self: center;
+    }
+
+    .footbar div span:hover {
+        transform: translate(20px, 0px);
+        cursor: pointer;
+    }
+}
